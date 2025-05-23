@@ -1,5 +1,6 @@
 import React from 'react';
-import { NavLink } from 'react-router';
+import { NavLink } from 'react-router'; 
+
 
 function NavBar() {
     return (
@@ -11,7 +12,7 @@ function NavBar() {
                             <NavLink
                                 to="/projects"
                                 className={({ isActive }) =>
-                                    `text-white text-xs sm:text-sm md:text-base font-anak-paud transition-colors duration-300 ${isActive ? 'text-amber-300' : 'hover:text-amber-300'
+                                    `nav-link ${isActive ? 'text-amber-300' : 'hover:text-amber-300'
                                     }`
                                 }
                             >
@@ -22,7 +23,7 @@ function NavBar() {
                             <NavLink
                                 to="/about"
                                 className={({ isActive }) =>
-                                    `text-white text-xs sm:text-sm md:text-base font-anak-paud transition-colors duration-300 ${isActive ? 'text-amber-300' : 'hover:text-amber-300'
+                                    ` nav-link ${isActive ? 'text-amber-300' : 'hover:text-amber-300'
                                     }`
                                 }
                             >
@@ -33,7 +34,7 @@ function NavBar() {
                             <NavLink
                                 to="/contact"
                                 className={({ isActive }) =>
-                                    `text-white text-xs sm:text-sm md:text-base font-anak-paud transition-colors duration-300 ${isActive ? 'text-amber-300' : 'hover:text-amber-300'
+                                    ` nav-link ${isActive ? 'text-amber-300' : 'hover:text-amber-300'
                                     }`
                                 }
                             >

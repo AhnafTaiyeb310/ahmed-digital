@@ -17,6 +17,10 @@
     font-family: anak-paud;
     src: url(../src/assets/fonts/anak-paud.ttf);
 }
+@font-face {
+    font-family: Lalesa-Peach;
+    src: url(../src/assets/fonts/Lalesa-Peach.ttf);
+}
 
 @import "tailwindcss";
 
@@ -35,9 +39,9 @@ body {
 @theme {
     --font-interRegular: inter-regular, "sans-serif";
     --font-false: false, "sans-serif";
-    --font-square-regular: Square-Regular;
     --font-ghafy: ghafy;
     --font-anak-paud: anak-paud;
+    --font-lalesa-peach: Lalesa-Peach;
 
     --color-dark-black: #000000;
 
@@ -45,6 +49,6 @@ body {
 
 @layer components {
     .nav-link {
-        @apply font-interRegular text-white text-[0.9rem] font-medium;
+        @apply text-white text-xs sm:text-sm md:text-base font-lalesa-peach transition-colors duration-300;
     }
 }
